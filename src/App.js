@@ -30,7 +30,7 @@ function App() {
   function onDelete(position) {
     console.log(`trato de borrar la posicion ${position}`);
     const newTasks = addTask.filter((task, key) => {
-      return (key = !position);
+      return key != position;
     });
 
     setAddTask(newTasks);
